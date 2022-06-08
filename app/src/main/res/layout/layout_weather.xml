@@ -59,47 +59,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/iv_weather"
-        android:layout_width="@dimen/icon_height_100"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/body_weather"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        tools:src="@drawable/ic_globe"
-        android:layout_marginStart="@dimen/small_margin"
-        android:layout_marginTop="@dimen/default_margin"
         app:layout_constraintTop_toBottomOf="@id/border"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/tv_weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginStart="@dimen/small_margin"
-        app:layout_constraintTop_toTopOf="@id/iv_weather"
-        app:layout_constraintStart_toEndOf="@id/iv_weather"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/icon_height_100"
+            android:maxWidth="@dimen/icon_height_150"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ic_globe"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_temp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/text_big"
-        android:layout_marginTop="@dimen/small_margin_5"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/tv_weather"
-        app:layout_constraintStart_toStartOf="@id/tv_weather"/>
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="@string/no_favorite"
+            android:layout_marginStart="@dimen/small_margin"
+            app:layout_constraintTop_toTopOf="@id/iv_weather"
+            app:layout_constraintStart_toEndOf="@id/iv_weather"/>
 
-    <TextView
-        android:id="@+id/tv_temp_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="@string/temp_format_detail"
-        android:textColor="@color/black"
-        android:lineSpacingExtra="5dp"
-        android:layout_marginTop="@dimen/small_margin_5"
-        app:layout_constraintTop_toBottomOf="@id/tv_temp"
-        app:layout_constraintStart_toStartOf="@id/tv_temp"/>
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_big"
+            tools:text="37"
+            android:layout_marginTop="@dimen/small_margin_5"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_weather"
+            app:layout_constraintStart_toStartOf="@id/tv_weather"/>
+
+        <TextView
+            android:id="@+id/tv_temp_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/temp_format_detail"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="@dimen/small_margin_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_temp"
+            app:layout_constraintStart_toStartOf="@id/tv_temp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_favorite"
@@ -107,8 +121,9 @@
         android:layout_width="@dimen/default_icon_height"
         android:layout_height="@dimen/default_icon_height"
         app:srcCompat="@drawable/ic_remove_favorite"
-        app:layout_constraintTop_toBottomOf="@id/tv_temp_detail"
+        app:layout_constraintTop_toBottomOf="@id/body_weather"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
