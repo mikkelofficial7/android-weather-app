@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="title_detail">Detail Cuaca</string>
+    <string name="no_favorite">Data Favorit Tidak Ditemukan</string>
+
+    <string name="no_network">No network is available, Please check your connection</string>
+    <string name="click_to_detail">Klik nama kota untuk melihat detail</string>
+    <string name="search_city">Cari nama kota..</string>
+    <string name="lat_long">Lat: %1$s Long: %2$s</string>
+    <string name="path_image">%1$simg/wn/%2$s@2x.png</string>
+    <string name="temp_format">%1$s\u2103</string>
+    <string name="humidity_format">%1$s\%%</string>
+    <string name="temp_format_detail">Suhu Min:&#160;%1$s\u2103\nSuhu Max:&#160;%2$s\u2103\nTekanan:&#160;%3$s\nKelembaban:&#160;%4$s</string>
+    <string name="wind_format_detail">Kecepatan:&#160;%1$sm/s\nKemiringan:&#160;%2$s&#176;\nHembusan:&#160;%3$sm/s</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/small_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_weather"
+        android:layout_width="@dimen/icon_height_100"
+        android:layout_height="@dimen/icon_height_100"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="sdhsdgsdgsidgis"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/small_margin_5"
+        app:layout_constraintTop_toBottomOf="@id/iv_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="sdhsdgsdgsidgis"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/small_margin_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="sdhsdgsdgsidgis"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/small_margin_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="sdhsdgsdgsidgis"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/small_margin_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_humidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
