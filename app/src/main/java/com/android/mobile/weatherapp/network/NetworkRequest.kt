@@ -56,7 +56,6 @@ object NetworkRequest {
 
             OkHttpClient
                 .Builder()
-                .sslSocketFactory(sslContext.socketFactory)
                 .build()
 
         } catch (e: Exception) {
