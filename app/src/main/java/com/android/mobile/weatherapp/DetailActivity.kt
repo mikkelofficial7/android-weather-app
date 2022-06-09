@@ -59,6 +59,10 @@ class DetailActivity : AppCompatActivity() {
 
         showCityDetail()
         getCityDetail(cityLat, cityLon)
+
+        binding.swipeRefresh.setOnRefreshListener {
+            getCityDetail(cityLat, cityLon)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -103,6 +107,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun hideLoading() {
         binding.progressBar.visibility = View.GONE
+        binding.swipeRefresh.isRefreshing = false
     }
 
     private fun showError(error: CommonError? = CommonError()) {
