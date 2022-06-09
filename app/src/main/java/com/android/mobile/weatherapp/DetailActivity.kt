@@ -124,7 +124,7 @@ class DetailActivity : AppCompatActivity() {
         val df = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
         val formattedDate = "${df.format(c)} 00:00:00"
 
-        val formatter = SimpleDateFormat("dd-MM-yyyy HH:mm:ss")
+        val formatter = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault())
         val date = formatter.parse(formattedDate) as Date
 
         return listTemp?.filter { it.timestamp <= date.time.next3DaysTimeStamp() } as ArrayList<TemperatureData>
