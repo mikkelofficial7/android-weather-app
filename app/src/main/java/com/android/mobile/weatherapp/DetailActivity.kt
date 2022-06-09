@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.android.mobile.weatherapp.adapter.WeatherAdapter
 import com.android.mobile.weatherapp.databinding.ActivityDetailBinding
 import com.android.mobile.weatherapp.extension.next3DaysTimeStamp
+import com.android.mobile.weatherapp.extension.toSecond
 import com.android.mobile.weatherapp.model.CommonError
 import com.android.mobile.weatherapp.model.TemperatureData
 import com.android.mobile.weatherapp.receiver.NetworkReceiver
@@ -127,7 +128,7 @@ class DetailActivity : AppCompatActivity() {
         val formatter = SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault())
         val date = formatter.parse(formattedDate) as Date
 
-        return listTemp?.filter { it.timestamp <= date.time.next3DaysTimeStamp() } as ArrayList<TemperatureData>
+        return listTemp?.filter { it.timestamp.toSecond() <= date.time.next3DaysTimeStamp() } as ArrayList<TemperatureData>
     }
 
     fun showNoNetworkUI() {
