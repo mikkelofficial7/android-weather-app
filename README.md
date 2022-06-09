@@ -9,3 +9,4 @@
    e. Gson (for converting object data to javascript object notation/JSON)
    f. navigation fragment (communicate between fragment using navigation controller)
    g. mockito (for mocking model/class to unit testing)
+   h. swipe refresh layout (for swipe-to-refresh page manually)
