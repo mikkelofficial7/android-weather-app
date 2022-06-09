@@ -26,7 +26,7 @@ class WeatherUnitTest {
 
     @Test
     fun testFindWeather() {
-        CoroutineScope(Dispatchers.IO).launch {
+        CoroutineScope(Dispatchers.Main).launch {
             val validResponse = CityData()
             val findWeather = request.findWeatherByCityName("jakarta")
 
@@ -43,7 +43,7 @@ class WeatherUnitTest {
 
     @Test
     fun testFindWeatherByLatLong() {
-        CoroutineScope(Dispatchers.IO).launch {
+        CoroutineScope(Dispatchers.Main).launch {
             val validResponse = CityDataDetail()
             val findWeather = request.findWeatherByCityName("jakarta")
 
