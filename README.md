@@ -17,3 +17,6 @@
    g. mockito (for mocking model/class to unit testing)
    
    h. swipe refresh layout (for swipe-to-refresh page manually)
+
+
+![Alt text](https://raw.githubusercontent.com/mikkelofficial7/weather-app/main/Screenshot%202022-07-28%20163232.png "Screenshot")
