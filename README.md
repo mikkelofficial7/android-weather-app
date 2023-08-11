@@ -1,7 +1,11 @@
-1. Github Url: https://github.com/mikkelofficial7/android-weather-app
-2. How to build: just run the APK provided
-3. Architechture: MVVM + Livedata + View Binding
-4. Library:
+Android Weather App using Open Weather Map Api
+https://openweathermap.org/
+
+<img src="https://raw.githubusercontent.com/mikkelofficial7/weather-app/main/Screenshot%202022-07-28%20163232.png" height=400px>
+
+1. How to build: just run the APK provided
+2. Architechture: MVVM + Livedata + View Binding
+3. Library:
    a. Glide (for loading url-based image or image get from API)
    
    b. Room (for internal database to save favorite data list)
@@ -17,6 +21,3 @@
    g. mockito (for mocking model/class to unit testing)
    
    h. swipe refresh layout (for swipe-to-refresh page manually)
-
-
-![Alt text](https://raw.githubusercontent.com/mikkelofficial7/weather-app/main/Screenshot%202022-07-28%20163232.png "Screenshot")
