@@ -1,4 +1,4 @@
-1. Github Url: https://github.com/mikkelofficial7/weather-app
+1. Github Url: https://github.com/mikkelofficial7/android-weather-app
 2. How to build: just run the APK provided
 3. Architechture: MVVM + Livedata + View Binding
 4. Library:
